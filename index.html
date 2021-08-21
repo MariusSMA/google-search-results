@@ -1,612 +1,922 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>build this webpage - Google Search</title>
-    <meta content="ie=edge" http-equiv="X-UA-Compatible" />
-    <meta
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
-      name="viewport"
-    />
-    <link
+<head>
+  <meta charset="UTF-8"/>
+  <title>build this webpage - Google Search</title>
+  <meta content="ie=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta
+      content="A project that replies the build this webpage google results"
+      name="description"
+  />
+  <link
       href="./images/favicon.ico"
       rel="icon"
       sizes="32x32"
       type="image/x-icon"
-    />
-    <link href="./css/style.css" rel="stylesheet" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <nav class="navbar">
-          <div class="navbar-header">
-            <img
-              alt="Menu Icon"
-              class="menu-icon"
-              src="./images/menu-icon.svg"
-            />
-            <img
-              alt="Google Logo"
-              class="google-logo"
-              height="60"
-              src="./images/google-logo.png"
-              width="184"
-            />
-            <img
-              alt="User Icon"
-              class="user-icon"
-              src="./images/user-icon.jpg"
-            />
-          </div>
-          <div class="navbar-form">
-            <div class="navbar-searchbar">
-              <img
-                alt="Search Icon"
-                class="search-icon"
-                src="./images/search-icon.svg"
-              />
-              <label for="search"></label>
-              <input
-                id="search"
-                name="search"
-                type="search"
-                value="build this webpage"
-              />
-              <img
-                alt="Close Icon"
-                class="close-icon"
-                src="./images/close-icon.svg"
-              />
-            </div>
-          </div>
-          <ul class="nav-list">
-            <li class="nav-list-item">
-              <a class="nav-link active-link" href="#">All</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">Maps</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">News</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">Videos</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">Images</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">Shopping</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">Books</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">Flights</a>
-            </li>
-            <li class="nav-list-item">
-              <a class="nav-link" href="#">Search tools</a>
-            </li>
-          </ul>
-        </nav>
-        <div class="menu-bg"></div>
-        <div class="menu">
-          <img
+  />
+  <link href="./css/style.css" rel="stylesheet"/>
+</head>
+<body>
+<header class="header">
+  <div class="container">
+    <nav class="navbar">
+      <div class="navbar-header">
+        <img
+            alt="Menu Icon"
+            class="menu-icon"
+            height="24"
+            src="./images/menu-icon.svg"
+            width="24"
+        />
+        <img
             alt="Google Logo"
             class="google-logo"
             height="60"
             src="./images/google-logo.png"
             width="184"
+        />
+        <img
+            alt="User Icon"
+            class="user-icon"
+            height="64"
+            src="./images/user-icon.jpg"
+            width="64"
+        />
+      </div>
+      <div class="navbar-form">
+        <div class="navbar-searchbar">
+          <img
+              alt="Search Icon"
+              class="search-icon"
+              height="24"
+              src="./images/search-icon.svg"
+              width="24"
           />
-          <div class="upper-menu">
-            <ul class="upper-menu-list">
-              <li class="upper-menu-list-item">
-                <a class="upper-menu-link" href="#">
-                  <img
-                    alt="Home Icon"
-                    class="home-icon"
-                    src="./images/home-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">Home</span>
-                </a>
-              </li>
-              <li class="upper-menu-list-item">
-                <a class="upper-menu-link" href="#">
-                  <img
-                    alt="Search History Icon"
-                    class="search-history-icon"
-                    src="./images/search-history-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">Search history</span>
-                </a>
-              </li>
-              <li class="upper-menu-list-item">
-                <a class="upper-menu-link" href="#">
-                  <img
-                    alt="Collections Icon"
-                    class="collections-icon"
-                    src="./images/collections-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">Collections</span>
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div class="lower-menu">
-            <ul class="lower-menu-list">
-              <li class="lower-menu-list-item">
-                <a class="lower-menu-link" href="#">
-                  <img
-                    alt="Settings Icon"
-                    class="settings-icon"
-                    src="./images/settings-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">Settings</span>
-                </a>
-              </li>
-              <li class="lower-menu-list-item">
-                <a class="lower-menu-link" href="#">
-                  <img
-                    alt="Data in Search Icon"
-                    class="your-data-search-icon"
-                    src="./images/your-data-search.svg"
-                  />
-                  <span class="upper-menu-link-text">Your data in Search</span>
-                </a>
-              </li>
-              <li class="lower-menu-list-item">
-                <a class="lower-menu-link" href="#">
-                  <img
-                    alt="Explicit results Icon"
-                    class="explicit-results-icon"
-                    src="./images/explicit-results-icon.svg"
-                  />
-                  <span class="upper-menu-link-text"
-                    >Hide explicit results: off</span
-                  ></a
-                >
-              </li>
-              <li class="lower-menu-list-item">
-                <a class="lower-menu-link" href="#">
-                  <img
-                    alt="Dark mode Icon"
-                    class="dark-mode-icon"
-                    src="./images/dark-mode-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">Dark mode: off</span></a
-                >
-              </li>
-              <li class="lower-menu-list-item">
-                <a class="lower-menu-link" href="#">
-                  <img
-                    alt="How Search works Icon"
-                    class="how-search-works-icon"
-                    src="./images/how-search-works-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">How Search works</span></a
-                >
-              </li>
-              <li class="lower-menu-list-item">
-                <a class="lower-menu-link" href="#">
-                  <img
-                    alt="Help Icon"
-                    class="help-icon"
-                    src="./images/help-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">Help</span></a
-                >
-              </li>
-              <li class="lower-menu-list-item">
-                <a class="lower-menu-link" href="#">
-                  <img
-                    alt="Feedback Icon"
-                    class="feedback-icon"
-                    src="./images/feedback-icon.svg"
-                  />
-                  <span class="upper-menu-link-text">Send feedback</span>
-                </a>
-              </li>
-            </ul>
-          </div>
+          <label class="sr-only" for="search">Search here:</label>
+          <input
+              id="search"
+              name="search"
+              type="search"
+              value="build this webpage"
+          />
+          <img
+              alt="Close Icon"
+              class="close-icon"
+              height="24"
+              src="./images/close-icon.svg"
+              width="24"
+          />
         </div>
       </div>
-    </header>
-    <main class="main">
-      <div class="container">
-        <div class="site-card">
-          <div class="site-card-header">
+      <ul class="nav-list">
+        <li class="nav-list-item">
+          <a class="nav-link active-link" href="#">All</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">Maps</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">News</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">Videos</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">Images</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">Shopping</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">Books</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">Flights</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-link" href="#">Search tools</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="menu-bg"></div>
+    <div class="menu">
+      <img
+          alt="Google Logo"
+          class="google-logo"
+          height="60"
+          src="./images/google-logo.png"
+          width="184"
+      />
+      <div class="upper-menu">
+        <ul class="upper-menu-list">
+          <li class="upper-menu-list-item">
+            <a class="upper-menu-link" href="#">
+              <img
+                  alt="Home Icon"
+                  class="home-icon"
+                  height="24"
+                  src="./images/home-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Home</span>
+            </a>
+          </li>
+          <li class="upper-menu-list-item">
+            <a class="upper-menu-link" href="#">
+              <img
+                  alt="Search History Icon"
+                  class="search-history-icon"
+                  height="24"
+                  src="./images/search-history-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Search history</span>
+            </a>
+          </li>
+          <li class="upper-menu-list-item">
+            <a class="upper-menu-link" href="#">
+              <img
+                  alt="Collections Icon"
+                  class="collections-icon"
+                  height="24"
+                  src="./images/collections-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Collections</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="lower-menu">
+        <ul class="lower-menu-list">
+          <li class="lower-menu-list-item">
+            <a class="lower-menu-link" href="#">
+              <img
+                  alt="Settings Icon"
+                  class="settings-icon"
+                  height="24"
+                  src="./images/settings-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Settings</span>
+            </a>
+          </li>
+          <li class="lower-menu-list-item">
+            <a class="lower-menu-link" href="#">
+              <img
+                  alt="Data in Search Icon"
+                  class="your-data-search-icon"
+                  height="24"
+                  src="./images/your-data-search.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Your data in Search</span>
+            </a>
+          </li>
+          <li class="lower-menu-list-item">
+            <a class="lower-menu-link" href="#">
+              <img
+                  alt="Explicit results Icon"
+                  class="explicit-results-icon"
+                  height="24"
+                  src="./images/explicit-results-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text"
+              >Hide explicit results: off</span
+              ></a
+            >
+          </li>
+          <li class="lower-menu-list-item">
+            <a class="lower-menu-link" href="#">
+              <img
+                  alt="Dark mode Icon"
+                  class="dark-mode-icon"
+                  height="24"
+                  src="./images/dark-mode-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Dark mode: off</span></a
+            >
+          </li>
+          <li class="lower-menu-list-item">
+            <a class="lower-menu-link" href="#">
+              <img
+                  alt="How Search works Icon"
+                  class="how-search-works-icon"
+                  height="24"
+                  src="./images/how-search-works-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">How Search works</span></a
+            >
+          </li>
+          <li class="lower-menu-list-item">
+            <a class="lower-menu-link" href="#">
+              <img
+                  alt="Help Icon"
+                  class="help-icon"
+                  height="24"
+                  src="./images/help-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Help</span></a
+            >
+          </li>
+          <li class="lower-menu-list-item">
+            <a class="lower-menu-link" href="#">
+              <img
+                  alt="Feedback Icon"
+                  class="feedback-icon"
+                  height="24"
+                  src="./images/feedback-icon.svg"
+                  width="24"
+              />
+              <span class="upper-menu-link-text">Send feedback</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="main">
+  <div class="container">
+    <div class="site-card">
+      <div class="site-card-header">
+        <img
+            alt="Site Icon"
+            class="site-icon"
+            height="32"
+            src="images/default-site-logo.png"
+            width="32"
+        />
+        <p class="site-card-url">
+          https://victor-lf.github.io
+          <span class="site-card-inner-url"> › google-s...</span>
+        </p>
+      </div>
+      <a class="site-card-link" href="#">
+        build this webpage - GitHub Pages
+      </a>
+      <div class="site-card-body">
+        <p class="site-card-body-text">
+          build this webpage. https://benjdelt.github.io/google-results/.
+          With zero coding experience, artist building 180 webpages in 180
+          days ...
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="accordion">
+      <h2 class="accordion-title">People also ask</h2>
+      <div class="accordion-body">
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <p class="accordion-item-text">
+              How can I build my own website?
+            </p>
             <img
-              alt="Site Icon"
-              class="site-icon"
-              src="images/default-site-logo.png"
+                alt="Expand More Icon"
+                class="expand-more-icon"
+                height="24"
+                src="./images/expand-more-icon.svg"
+                width="24"
             />
-            <p class="site-card-url">
-              https://victor-lf.github.io
-              <span class="site-card-inner-url"> › google-s...</span>
-            </p>
           </div>
-          <a class="site-card-link" href="#">
-            build this webpage - GitHub Pages
-          </a>
-          <div class="site-card-body first-card-body">
-            <p class="site-card-body-text">
-              build this webpage. https://benjdelt.github.io/google-results/.
-              With zero coding experience, artist building 180 webpages in 180
-              days ...
-            </p>
+          <div class="accordion-item-card-container">
+            <div class="accordion-item-card">
+              <p class="accordion-item-card-text">
+                To create a website, you need to follow 4 basic steps.
+              </p>
+              <ol class="accordion-item-card-list">
+                <li class="accordion-item-card-list-item">
+                  Register your domain name. Your domain name should reflect
+                  your products or services so that your customers can
+                  easily find your business through a search engine. ...
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Find a web hosting company. ...
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Prepare your content. ...
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Build your website.
+                </li>
+              </ol>
+              <p class="accordion-item-card-date">Sep 30, 2020</p>
+              <a class="accordion-item-card-link" href="#">
+                <div class="accordion-item-card-link-header">
+                  <img
+                      alt="Business Site Icon"
+                      class="business-site-icon"
+                      height="16"
+                      src="images/business-site-icon.png"
+                      width="16"
+                  />
+                  <p class="accordion-item-card-url">
+                    https://www.business.qld.gov.au › cr...
+                  </p>
+                </div>
+                <h2 class="accordion-item-card-link-title">
+                  Creating a website | Business Queensland
+                </h2>
+              </a>
+            </div>
+            <a class="accordion-item-more-results" href="#">More results</a>
           </div>
-          <div class="site-card-header">
-            <p class="site-card-url">
-              https://christine-27.github.io
-              <span class="site-card-inner-url"> › googl...</span>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <p class="accordion-item-text">
+              What is building a website called?
             </p>
+            <img
+                alt="Expand More Icon"
+                class="expand-more-icon"
+                height="24"
+                src="./images/expand-more-icon.svg"
+                width="24"
+            />
           </div>
-          <a class="site-card-link" href="#">
-            build this webpage - GitHub Pages
-          </a>
-          <div class="site-card-body">
-            <p class="site-card-body-text">
-              With zero coding experience, artist building 180 webpages . ...
-              days ago, having never done any...
+          <div class="accordion-item-card-container">
+            <div class="accordion-item-card">
+              <p class="accordion-item-card-text-second">
+                <strong>Web design</strong> is the process of creating
+                websites. It encompasses several aspects, including webpage
+                layout, content production, and graphic design. While the
+                terms web design and web development are often used
+                interchangeably, web design is technically a subset of the
+                broader category of web development.
+              </p>
+              <p class="accordion-item-card-date-second">Feb 5, 2013</p>
+              <a class="accordion-item-card-link" href="#">
+                <div class="accordion-item-card-link-header">
+                  <img
+                      alt="Tech Terms Logo"
+                      class="tech-terms-logo"
+                      height="16"
+                      src="images/tech-terms-logo.png"
+                      width="16"
+                  />
+                  <p class="accordion-item-card-url">
+                    https://techterms.com › definition
+                  </p>
+                </div>
+                <h2 class="accordion-item-card-link-title">
+                  Web Design Definition - TechTerms
+                </h2>
+              </a>
+            </div>
+            <a class="accordion-item-more-results" href="#">More results</a>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <p class="accordion-item-text">
+              How do you create a website for free?
             </p>
+            <img
+                alt="Expand More Icon"
+                class="expand-more-icon"
+                height="24"
+                src="./images/expand-more-icon.svg"
+                width="24"
+            />
+          </div>
+          <div class="accordion-item-card-container">
+            <div class="accordion-item-card">
+              <p class="accordion-item-card-text">
+                How to Create a Free Website
+              </p>
+              <ol class="accordion-item-card-list">
+                <li class="accordion-item-card-list-item">
+                  Sign up for a free website builder. Choose what kind of
+                  website you want to create.
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Customize a template or get a website made for you. Choose
+                  your starting point.
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Drag and drop 100s of design features. ...
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Get ready for business. ...
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Publish your website and go live. ...
+                </li>
+                <li class="accordion-item-card-list-item">
+                  Drive traffic to your site.
+                </li>
+              </ol>
+              <a class="accordion-item-card-link" href="#">
+                <div class="accordion-item-card-link-header">
+                  <img
+                      alt="Wix Site Logo"
+                      class="wix-site-logo"
+                      height="16"
+                      src="images/wix-site-logo.png"
+                      width="16"
+                  />
+                  <p class="accordion-item-card-url">https://www.wix.com</p>
+                </div>
+                <h2 class="accordion-item-card-link-title">
+                  Wix.com: Free Website Builder | Create a Free Website
+                </h2>
+              </a>
+            </div>
+            <a class="accordion-item-more-results" href="#">More results</a>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <div class="accordion-item-header">
+            <p class="accordion-item-text">Can Google build a website?</p>
+            <img
+                alt="Expand More Icon"
+                class="expand-more-icon"
+                height="24"
+                src="./images/expand-more-icon.svg"
+                width="24"
+            />
+          </div>
+          <div class="accordion-item-card-container">
+            <div class="accordion-item-card">
+              <p class="accordion-item-card-text-second">
+                You can
+                <strong
+                >create a website for personal or business use</strong
+                >
+                with Google Sites.
+              </p>
+              <a class="accordion-item-card-link" href="#">
+                <div class="accordion-item-card-link-header">
+                  <img
+                      alt="Google Site Logo"
+                      class="google-site-logo"
+                      height="16"
+                      src="images/favicon.ico"
+                      width="16"
+                  />
+                  <p class="accordion-item-card-url">
+                    https://support.google.com › answer
+                  </p>
+                </div>
+                <h2 class="accordion-item-card-link-title">
+                  Create, name, or copy a site - Sites Help - Google Support
+                </h2>
+              </a>
+            </div>
+            <a class="accordion-item-more-results" href="#">More results</a>
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="accordion">
-          <h2 class="accordion-title">People also ask</h2>
-          <div class="accordion-body">
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <p class="accordion-item-text">
-                  How can I build my own website?
-                </p>
-                <img
-                  alt="Expand More Icon"
-                  class="expand-more-icon"
-                  height="24"
-                  src="./images/expand-more-icon.svg"
-                  width="24"
-                />
-              </div>
-              <div class="accordion-item-card-container">
-                <div class="accordion-item-card">
-                  <p class="accordion-item-card-text">
-                    To create a website, you need to follow 4 basic steps.
-                  </p>
-                  <ol class="accordion-item-card-list">
-                    <li class="accordion-item-card-list-item">
-                      Register your domain name. Your domain name should reflect
-                      your products or services so that your customers can
-                      easily find your business through a search engine. ...
-                    </li>
-                    <li class="accordion-item-card-list-item">
-                      Find a web hosting company. ...
-                    </li>
-                    <li class="accordion-item-card-list-item">
-                      Prepare your content. ...
-                    </li>
-                    <li class="accordion-item-card-list-item">
-                      Build your website.
-                    </li>
-                  </ol>
-                  <p class="accordion-item-card-date">Sep 30, 2020</p>
-                  <a class="accordion-item-card-link" href="#">
-                    <div class="accordion-item-card-link-header">
-                      <img
-                        alt="Business Site Icon"
-                        class="business-site-icon"
-                        height="16"
-                        src="images/business-site-icon.png"
-                        width="16"
-                      />
-                      <p class="accordion-item-card-url">
-                        https://www.business.qld.gov.au › cr...
-                      </p>
-                    </div>
-                    <h2 class="accordion-item-card-link-title">
-                      Creating a website | Business Queensland
-                    </h2>
-                  </a>
-                </div>
-                <a class="accordion-item-more-results" href="#">More results</a>
-              </div>
+      <div class="accordion-footer">
+        <p class="accordion-footer-text">Feedback</p>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <section class="videos">
+      <h2 class="videos-title">Videos</h2>
+      <div class="videos-cards">
+        <div class="videos-card">
+          <div class="videos-card-body">
+            <div class="videos-card-body-thumbnail">
+              <img
+                  alt="Video Thumbnail"
+                  class="videos-card-body-thumbnail-image"
+                  height="76"
+                  src="./images/video-thumbnail.jpeg"
+                  width="135"
+              />
+              <img
+                  alt="Video Play Button"
+                  class="videos-card-body-thumbnail-play-button"
+                  height="16"
+                  src="./images/play-button.svg"
+                  width="16"
+              />
+              <p class="videos-card-body-thumbnail-length">12:22</p>
             </div>
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <p class="accordion-item-text">
-                  What is building a website called?
-                </p>
-                <img
-                  alt="Expand More Icon"
-                  class="expand-more-icon"
-                  height="24"
-                  src="./images/expand-more-icon.svg"
-                  width="24"
-                />
-              </div>
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <p class="accordion-item-text">Can Google build a website?</p>
-                <img
-                  alt="Expand More Icon"
-                  class="expand-more-icon"
-                  height="24"
-                  src="./images/expand-more-icon.svg"
-                  width="24"
-                />
-              </div>
-            </div>
-            <div class="accordion-item">
-              <div class="accordion-item-header">
-                <p class="accordion-item-text">
-                  How can I create my own website for free?
-                </p>
-                <img
-                  alt="Expand More Icon"
-                  class="expand-more-icon"
-                  height="24"
-                  src="./images/expand-more-icon.svg"
-                  width="24"
-                />
-              </div>
+            <div class="videos-card-body-text">
+              <h3 class="videos-card-body-text-title">
+                How to Make a Website in 10 mins - Simple & Easy
+              </h3>
+              <p class="videos-card-body-text-yt-channel">
+                    <span class="videos-card-body-text-yt-channel-bold">
+                      Youtube
+                    </span>
+                · Website Learners
+              </p>
+              <p class="videos-card-body-text-date">Jan 3, 2018</p>
             </div>
           </div>
-          <div class="accordion-footer">
-            <p class="accordion-footer-text">Feedback</p>
+          <div class="videos-card-footer">
+            <p class="videos-card-footer-text-left">In this video</p>
+            <p class="videos-card-footer-text-key-moments">6 key moments</p>
+            <img
+                alt="Expand Videos Icon"
+                class="expand-videos-icon"
+                height="18"
+                src="./images/expand-videos-icon.svg"
+                width="18"
+            />
+          </div>
+        </div>
+        <div class="videos-card">
+          <div class="videos-card-body">
+            <div class="videos-card-body-thumbnail">
+              <img
+                  alt="Video Thumbnail"
+                  class="videos-card-body-thumbnail-image"
+                  height="76"
+                  src="./images/video-thumbnail-2.jpeg"
+                  width="135"
+              />
+              <img
+                  alt="Video Play Button"
+                  class="videos-card-body-thumbnail-play-button"
+                  height="16"
+                  src="./images/play-button.svg"
+                  width="16"
+              />
+              <p class="videos-card-body-thumbnail-length">22:01</p>
+            </div>
+            <div class="videos-card-body-text">
+              <h3 class="videos-card-body-text-title">
+                How To Build A Website in 2021
+              </h3>
+              <p class="videos-card-body-text-yt-channel">
+                    <span class="videos-card-body-text-yt-channel-bold">
+                      Youtube
+                    </span>
+                · Ali Abdaal
+              </p>
+              <p class="videos-card-body-text-date">Apr 11, 2021</p>
+            </div>
+          </div>
+          <div class="videos-card-footer">
+            <p class="videos-card-footer-text-left">In this video</p>
+            <p class="videos-card-footer-text-key-moments">4 key moments</p>
+            <img
+                alt="Expand Videos Icon"
+                class="expand-videos-icon"
+                height="18"
+                src="./images/expand-videos-icon.svg"
+                width="18"
+            />
+          </div>
+        </div>
+        <div class="videos-card">
+          <div class="videos-card-body">
+            <div class="videos-card-body-thumbnail">
+              <img
+                  alt="Video Thumbnail"
+                  class="videos-card-body-thumbnail-image"
+                  height="76"
+                  src="./images/video-thumbnail-3.jpeg"
+                  width="135"
+              />
+              <img
+                  alt="Video Play Button"
+                  class="videos-card-body-thumbnail-play-button"
+                  height="16"
+                  src="./images/play-button.svg"
+                  width="16"
+              />
+              <p class="videos-card-body-thumbnail-length">6:56</p>
+            </div>
+            <div class="videos-card-body-text">
+              <h3 class="videos-card-body-text-title">
+                How to Make a Website - Free & Under 7 minutes
+              </h3>
+              <p class="videos-card-body-text-yt-channel">
+                    <span class="videos-card-body-text-yt-channel-bold">
+                      Youtube
+                    </span>
+                · Webnode - English
+              </p>
+              <p class="videos-card-body-text-date">Sep 15, 2016</p>
+            </div>
+          </div>
+          <div class="videos-card-footer">
+            <p class="videos-card-footer-text-left">In this video</p>
+            <p class="videos-card-footer-text-key-moments">
+              25 key moments
+            </p>
+            <img
+                alt="Expand Videos Icon"
+                class="expand-videos-icon"
+                height="18"
+                src="./images/expand-videos-icon.svg"
+                width="18"
+            />
           </div>
         </div>
       </div>
-      <div class="container">
-        <div class="search-card">
-          <h2 class="search-card-title">Related searches</h2>
-          <div class="search-card-body">
-            <div class="search-card-item search-card-item-no-padding">
-              <div class="search-card-item-header">
-                <div class="search-card-item-header-img-container">
+      <a class="videos-more" href="#">
+        <span class="videos-more-text">More videos</span>
+        <img
+            alt="Expand More Icon"
+            class="videos-more-expand-icon"
+            height="24"
+            src="./images/expand-more-icon-right.svg"
+            width="24"
+        />
+      </a>
+    </section>
+  </div>
+  <div class="container">
+    <div class="search-card">
+      <h2 class="search-card-title">Related searches</h2>
+      <div class="search-card-body">
+        <div class="search-card-item search-card-item-no-padding">
+          <div class="search-card-item-header">
+            <div class="search-card-item-header-img-container">
+              <img
+                  alt="GoDaddy Logo"
+                  class="go-daddy-logo"
+                  height="13"
+                  src="./images/go-daddy-small-logo.png"
+                  width="48"
+              />
+            </div>
+            <h3 class="search-card-item-header-title first-title">
+              Best website builder
+            </h3>
+            <img
+                alt="Expand More Icon"
+                class="expand-icon"
+                height="24"
+                src="./images/expand-more-icon.svg"
+                width="24"
+            />
+          </div>
+          <div class="search-card-item-container">
+            <ul class="search-card-item-list">
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-img-container">
                   <img
-                    alt="GoDaddy Logo"
-                    class="go-daddy-logo"
-                    height="13"
-                    src="./images/go-daddy-small-logo.png"
-                    width="48"
+                      alt="GoDaddy Logo"
+                      class="search-card-item-list-item-logo"
+                      height="25"
+                      src="./images/go-daddy-logo.png"
+                      width="96"
                   />
                 </div>
-                <h3 class="search-card-item-header-title first-title">
-                  Best website builder
-                </h3>
-                <img
-                  alt="Expand More Icon"
-                  class="expand-icon"
-                  src="./images/expand-more-icon.svg"
-                />
-              </div>
-              <div class="search-card-item-container">
-                <ul class="search-card-item-list">
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-img-container">
-                      <img
-                        alt="GoDaddy Logo"
-                        class="search-card-item-list-item-logo"
-                        src="./images/go-daddy-logo.png"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-text">GoDaddy</p>
-                  </li>
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-img-container">
-                      <img
-                        alt="Squarespace Logo"
-                        class="search-card-item-list-item-logo"
-                        src="./images/squaresp-logo.png"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-text">Squaresp...</p>
-                  </li>
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-img-container">
-                      <img
-                        alt="Weebly Logo"
-                        class="search-card-item-list-item-logo"
-                        src="./images/weebly-logo.png"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-text">Weebly</p>
-                  </li>
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-img-container">
-                      <img
-                        alt="Shopify Logo"
-                        class="search-card-item-list-item-logo"
-                        src="./images/shopify-logo.png"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-text">Shopify</p>
-                  </li>
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-img-container">
-                      <img
-                        alt="Jimdo Logo"
-                        class="search-card-item-list-item-logo"
-                        src="./images/jimdo-logo.png"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-text">Jimdo</p>
-                  </li>
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-img-container">
-                      <img
-                        alt="Strikingly Logo"
-                        class="search-card-item-list-item-logo"
-                        src="./images/strikingly-logo.png"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-text">Strikingly</p>
-                  </li>
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-img-container">
-                      <img
-                        alt="Big Comm Logo"
-                        class="search-card-item-list-item-logo"
-                        src="./images/big-comm-logo.png"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-text">BigComm...</p>
-                  </li>
-                  <li class="search-card-item-list-item">
-                    <div class="search-card-item-list-item-expand-icon">
-                      <img
-                        alt="Expand More Icon"
-                        class="expand-icon-right"
-                        src="./images/expand-more-icon-right.svg"
-                      />
-                    </div>
-                    <p class="search-card-item-list-item-desc">More results</p>
-                  </li>
-                </ul>
-                <a class="search-card-item-footer-btn" href="#">
+                <p class="search-card-item-list-item-text">GoDaddy</p>
+              </li>
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-img-container">
                   <img
-                    alt="Search Icon"
-                    class="search-icon"
-                    src="./images/search-icon-darker.svg"
+                      alt="Squarespace Logo"
+                      class="search-card-item-list-item-logo"
+                      height="96"
+                      src="./images/squaresp-logo.png"
+                      width="96"
                   />
-                  <p class="search-card-item-footer-btn-text">
-                    Best website builder
-                  </p>
-                </a>
-              </div>
-            </div>
-            <div class="search-card-item search-card-item-no-padding">
-              <div class="search-card-item-header">
-                <img
-                  alt="Canva Icon"
-                  class="canva-icon"
-                  height="96"
-                  src="./images/canva-icon.png"
-                  width="96"
-                />
-                <h3
-                  class="
+                </div>
+                <p class="search-card-item-list-item-text">Squaresp...</p>
+              </li>
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-img-container">
+                  <img
+                      alt="Weebly Logo"
+                      class="search-card-item-list-item-logo"
+                      height="34"
+                      src="./images/weebly-logo.png"
+                      width="96"
+                  />
+                </div>
+                <p class="search-card-item-list-item-text">Weebly</p>
+              </li>
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-img-container">
+                  <img
+                      alt="Shopify Logo"
+                      class="search-card-item-list-item-logo"
+                      height="96"
+                      src="./images/shopify-logo.png"
+                      width="96"
+                  />
+                </div>
+                <p class="search-card-item-list-item-text">Shopify</p>
+              </li>
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-img-container">
+                  <img
+                      alt="Jimdo Logo"
+                      class="search-card-item-list-item-logo"
+                      height="39"
+                      src="./images/jimdo-logo.png"
+                      width="96"
+                  />
+                </div>
+                <p class="search-card-item-list-item-text">Jimdo</p>
+              </li>
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-img-container">
+                  <img
+                      alt="Strikingly Logo"
+                      class="search-card-item-list-item-logo"
+                      height="96"
+                      src="./images/strikingly-logo.png"
+                      width="96"
+                  />
+                </div>
+                <p class="search-card-item-list-item-text">Strikingly</p>
+              </li>
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-img-container">
+                  <img
+                      alt="Big Comm Logo"
+                      class="search-card-item-list-item-logo"
+                      height="50"
+                      src="./images/big-comm-logo.png"
+                      width="96"
+                  />
+                </div>
+                <p class="search-card-item-list-item-text">BigComm...</p>
+              </li>
+              <li class="search-card-item-list-item">
+                <div class="search-card-item-list-item-expand-icon">
+                  <img
+                      alt="Expand More Icon"
+                      class="expand-icon-right"
+                      height="24"
+                      src="./images/expand-more-icon-right.svg"
+                      width="24"
+                  />
+                </div>
+                <p class="search-card-item-list-item-desc">More results</p>
+              </li>
+            </ul>
+            <a class="search-card-item-footer-btn" href="#">
+              <img
+                  alt="Search Icon"
+                  class="search-icon"
+                  height="24"
+                  src="./images/search-icon-darker.svg"
+                  width="24"
+              />
+              <p class="search-card-item-footer-btn-text">
+                Best website builder
+              </p>
+            </a>
+          </div>
+        </div>
+        <div class="search-card-item search-card-item-no-padding">
+          <div class="search-card-item-header">
+            <img
+                alt="Canva Icon"
+                class="canva-icon"
+                height="96"
+                src="./images/canva-icon.png"
+                width="96"
+            />
+            <h3
+                class="
                     search-card-item-header-title
                     search-card-item-header-title-margin
                   "
-                >
-                  Useful websites
-                </h3>
-                <img
-                  alt="Expand More Icon"
-                  class="expand-icon expand-icon-down"
-                  src="./images/expand-more-icon.svg"
-                />
-              </div>
-            </div>
-            <div class="search-card-item search-card-item-no-padding">
-              <div class="search-card-item-header">
-                <img
-                  alt="Webflow Icon"
-                  class="webflow-icon"
-                  height="96"
-                  src="./images/webflow-icon.png"
-                  width="96"
-                />
-                <h3
-                  class="
+            >
+              Useful websites
+            </h3>
+            <img
+                alt="Expand More Icon"
+                class="expand-icon expand-icon-down"
+                height="24"
+                src="./images/expand-more-icon.svg"
+                width="24"
+            />
+          </div>
+        </div>
+        <div class="search-card-item search-card-item-no-padding">
+          <div class="search-card-item-header">
+            <img
+                alt="Webflow Icon"
+                class="webflow-icon"
+                height="96"
+                src="./images/webflow-icon.png"
+                width="96"
+            />
+            <h3
+                class="
                     search-card-item-header-title
                     search-card-item-header-title-margin
                   "
-                >
-                  Alternatives to Webflow
-                </h3>
-                <img
-                  alt="Expand More Icon"
-                  class="expand-icon expand-icon-down"
-                  src="./images/expand-more-icon.svg"
-                />
-              </div>
-            </div>
-            <div class="search-card-item">
-              <div class="search-card-item-header">
-                <img
-                  alt="Search Icon"
-                  class="search-icon"
-                  src="./images/search-icon-darker.svg"
-                />
-                <h3 class="search-card-item-header-title">
-                  Create website Google
-                </h3>
-              </div>
-            </div>
-            <div class="search-card-item">
-              <div class="search-card-item-header">
-                <img
-                  alt="Search Icon"
-                  class="search-icon"
-                  src="./images/search-icon-darker.svg"
-                />
-                <h3 class="search-card-item-header-title">Wix website</h3>
-              </div>
-            </div>
-            <div class="search-card-item">
-              <div class="search-card-item-header">
-                <img
-                  alt="Search Icon"
-                  class="search-icon"
-                  src="./images/search-icon-darker.svg"
-                />
-                <h3 class="search-card-item-header-title">Google website</h3>
-              </div>
-            </div>
-            <div class="search-card-item">
-              <div class="search-card-item-header">
-                <img
-                  alt="Search Icon"
-                  class="search-icon"
-                  src="./images/search-icon-darker.svg"
-                />
-                <h3 class="search-card-item-header-title">
-                  Creating a website for your business
-                </h3>
-              </div>
-            </div>
-            <div class="search-card-item">
-              <div class="search-card-item-header">
-                <img
-                  alt="Search Icon"
-                  class="search-icon"
-                  src="./images/search-icon-darker.svg"
-                />
-                <h3 class="search-card-item-header-title">Website design</h3>
-              </div>
-            </div>
-            <div class="search-card-item">
-              <div class="search-card-item-header">
-                <img
-                  alt="Search Icon"
-                  class="search-icon"
-                  src="./images/search-icon-darker.svg"
-                />
-                <h3 class="search-card-item-header-title">Website login</h3>
-              </div>
-            </div>
-            <div class="search-card-item">
-              <div class="search-card-item-header">
-                <img
-                  alt="Search Icon"
-                  class="search-icon"
-                  src="./images/search-icon-darker.svg"
-                />
-                <h3 class="search-card-item-header-title">
-                  Free website builder and domain
-                </h3>
-              </div>
-            </div>
+            >
+              Alternatives to Webflow
+            </h3>
+            <img
+                alt="Expand More Icon"
+                class="expand-icon expand-icon-down"
+                height="24"
+                src="./images/expand-more-icon.svg"
+                width="24"
+            />
+          </div>
+        </div>
+        <div class="search-card-item">
+          <div class="search-card-item-header">
+            <img
+                alt="Search Icon"
+                class="search-icon"
+                height="24"
+                src="./images/search-icon-darker.svg"
+                width="24"
+            />
+            <h3 class="search-card-item-header-title">
+              Create website Google
+            </h3>
+          </div>
+        </div>
+        <div class="search-card-item">
+          <div class="search-card-item-header">
+            <img
+                alt="Search Icon"
+                class="search-icon"
+                height="24"
+                src="./images/search-icon-darker.svg"
+                width="24"
+            />
+            <h3 class="search-card-item-header-title">Wix website</h3>
+          </div>
+        </div>
+        <div class="search-card-item">
+          <div class="search-card-item-header">
+            <img
+                alt="Search Icon"
+                class="search-icon"
+                height="24"
+                src="./images/search-icon-darker.svg"
+                width="24"
+            />
+            <h3 class="search-card-item-header-title">Google website</h3>
+          </div>
+        </div>
+        <div class="search-card-item">
+          <div class="search-card-item-header">
+            <img
+                alt="Search Icon"
+                class="search-icon"
+                height="24"
+                src="./images/search-icon-darker.svg"
+                width="24"
+            />
+            <h3 class="search-card-item-header-title">
+              Creating a website for your business
+            </h3>
+          </div>
+        </div>
+        <div class="search-card-item">
+          <div class="search-card-item-header">
+            <img
+                alt="Search Icon"
+                class="search-icon"
+                height="24"
+                src="./images/search-icon-darker.svg"
+                width="24"
+            />
+            <h3 class="search-card-item-header-title">Website design</h3>
+          </div>
+        </div>
+        <div class="search-card-item">
+          <div class="search-card-item-header">
+            <img
+                alt="Search Icon"
+                class="search-icon"
+                height="24"
+                src="./images/search-icon-darker.svg"
+                width="24"
+            />
+            <h3 class="search-card-item-header-title">Website login</h3>
+          </div>
+        </div>
+        <div class="search-card-item">
+          <div class="search-card-item-header">
+            <img
+                alt="Search Icon"
+                class="search-icon"
+                height="24"
+                src="./images/search-icon-darker.svg"
+                width="24"
+            />
+            <h3 class="search-card-item-header-title">
+              Free website builder and domain
+            </h3>
           </div>
         </div>
       </div>
-    </main>
-    <footer class="footer"></footer>
-    <script src="./js/app.js"></script>
-  </body>
+    </div>
+  </div>
+</main>
+<footer class="footer"></footer>
+<script src="./js/app.js"></script>
+</body>
 </html>

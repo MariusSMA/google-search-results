@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
-
 /* Global Styles */
 
 :root {
@@ -25,6 +23,69 @@ ul {
   list-style-type: none;
 }
 
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  top: auto;
+  overflow: hidden;
+}
+
+/* clears the ‘X’ from Internet Explorer */
+
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+/* clears the ‘X’ from Chrome */
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-regular.woff2") format("woff2"),
+    url("../fonts/roboto-regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-medium.woff2") format("woff2"),
+    url("../fonts/roboto-medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-bold.woff2") format("woff2"),
+    url("../fonts/roboto-bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-italic.woff2") format("woff2"),
+    url("../fonts/roboto-italic.woff") format("woff");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
 /* Mobile Layout */
 
 body {
@@ -32,14 +93,16 @@ body {
   background-color: var(--bg-color);
 }
 
-.header {
-  margin-bottom: 0.5rem;
-}
-
 .container {
   background-color: #fff;
   padding: 0 1rem;
   margin: 0 auto;
+}
+
+/* Navigation Menu */
+
+.header {
+  margin-bottom: 0.5rem;
 }
 
 .navbar-header {
@@ -67,6 +130,8 @@ body {
 }
 
 .user-icon {
+  width: 2rem;
+  height: 2rem;
   border-radius: 50%;
 }
 
@@ -129,22 +194,24 @@ body {
 }
 
 .menu-bg {
-  display: none;
-  position: absolute;
+  visibility: hidden;
+  position: fixed;
+  z-index: 1;
   width: 100vw;
   height: 100%;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0);
+  transition: background-color 0.35s;
 }
 
 .menu-bg--active {
-  display: block;
+  visibility: visible;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
 .menu {
-  position: absolute;
+  position: fixed;
   height: 100%;
   top: 0;
   left: -15.625rem;
@@ -183,6 +250,8 @@ body {
   padding-left: 1rem;
 }
 
+/* Site Card */
+
 .site-card {
   background-color: #fff;
   padding: 1rem 0 0.75rem;
@@ -197,10 +266,11 @@ body {
 }
 
 .site-card-inner-url {
-  color: #808080;
+  color: #717171;
 }
 
 .site-icon {
+  width: 1rem;
   height: 1rem;
   margin-right: 0.75rem;
 }
@@ -210,12 +280,6 @@ body {
   font-size: 1.25rem;
   color: #4b11a8;
   margin-bottom: 0.65rem;
-}
-
-.first-card-body {
-  padding-bottom: 0.75rem;
-  border-bottom: 1px solid #dedede;
-  margin-bottom: 1rem;
 }
 
 .site-card-body-text {
@@ -265,9 +329,9 @@ body {
 }
 
 .accordion-item-card-container {
-  height: 0;
+  max-height: 0;
   overflow: hidden;
-  transition: height 0.35s;
+  transition: max-height 0.35s;
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
@@ -277,8 +341,8 @@ body {
 }
 
 .accordion-item-card-container--active {
-  height: 450px;
-  overflow: auto;
+  max-height: 450px;
+  animation: animationIn 0.35s;
 }
 
 .accordion-item-card {
@@ -295,6 +359,12 @@ body {
   padding-bottom: 1rem;
 }
 
+.accordion-item-card-text-second {
+  font-size: 0.875rem;
+  font-weight: normal;
+  padding-bottom: 1rem;
+}
+
 .accordion-item-card-list {
   font-size: 0.875rem;
   padding-left: 1.25rem;
@@ -306,7 +376,13 @@ body {
 
 .accordion-item-card-date {
   font-size: 0.875rem;
-  color: #70757a;
+  color: #656565;
+  margin-bottom: 0.25rem;
+}
+
+.accordion-item-card-date-second {
+  font-size: 0.875rem;
+  color: #656565;
   margin-bottom: 0.25rem;
 }
 
@@ -315,6 +391,10 @@ body {
   align-items: center;
   gap: 0.5rem;
   margin-bottom: 0.25rem;
+}
+
+.wix-site-logo {
+  margin-top: 0.1rem;
 }
 
 .accordion-item-card-url {
@@ -327,6 +407,7 @@ body {
   font-weight: 400;
   color: #4b11a8;
   line-height: 1.3;
+  width: 19.375rem;
 }
 
 .accordion-item-more-results {
@@ -344,6 +425,134 @@ body {
   color: #757575;
   text-align: right;
 }
+
+/* Videos Section */
+
+.videos {
+  padding: 0.75rem 0 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.videos-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #202124;
+}
+
+.videos-cards {
+  margin-bottom: 0.85rem;
+}
+
+.videos-card {
+  margin: 0.75rem -1rem 0;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid var(--border-lightgrey);
+}
+
+.videos-card:last-of-type {
+  border-bottom: none;
+}
+
+.videos-card-body {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+.videos-card-body-thumbnail {
+  position: relative;
+  height: 76px;
+}
+
+.videos-card-body-thumbnail-image {
+  border-radius: 0.5rem;
+}
+
+.videos-card-body-thumbnail-play-button {
+  position: absolute;
+  width: 2.1875rem;
+  height: 2.1875rem;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.videos-card-body-thumbnail-length {
+  position: absolute;
+  left: 5%;
+  bottom: 8%;
+  font-size: 0.75rem;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.54);
+  padding: 0 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.videos-card-body-text-title {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #1558d6;
+  line-height: 1.3;
+  margin-bottom: 0.25rem;
+}
+
+.videos-card-body-text-yt-channel,
+.videos-card-body-text-date {
+  font-size: 0.75rem;
+  color: #70757a;
+}
+
+.videos-card-body-text-yt-channel-bold {
+  color: #202124;
+}
+
+.videos-card-footer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  padding: 0.35rem 0.75rem;
+  background-color: #f0f6fd;
+  color: #4a4a4a;
+  border-radius: 0.25rem;
+}
+
+.videos-card-footer::before {
+  content: "";
+  position: absolute;
+  top: -0.43rem;
+  left: 3.5rem;
+  width: 0;
+  height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-bottom: 7px solid #f0f6fd;
+}
+
+.expand-videos-icon {
+  width: 1.125rem;
+  height: 1.125rem;
+}
+
+.videos-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.875rem;
+  color: #202124;
+  background-color: #f1f3f4;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.videos-more-expand-icon {
+  transform: rotate(-90deg);
+}
+
+/* Related Searches - Search Card */
 
 .search-card {
   padding: 1rem 0 0.5rem;
@@ -390,6 +599,24 @@ body {
 
 .search-card-item-header-img-container--active {
   display: flex;
+  animation: animationIn 0.35s;
+}
+
+@keyframes animationIn {
+  0% {
+    transform: translateX(-1rem);
+    opacity: 0.25;
+  }
+
+  50% {
+    transform: translateX(-0.5rem);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 }
 
 .go-daddy-logo {
@@ -437,7 +664,7 @@ body {
 }
 
 .search-card-item-container {
-  height: 12.5rem;
+  height: 12.75rem;
   margin: 0 -1rem;
   padding: 0 1rem;
   overflow: hidden;

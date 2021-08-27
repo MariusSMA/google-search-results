@@ -14,6 +14,18 @@ menuBackground.addEventListener("click", () => {
   menuBackground.classList.remove("menu-bg--active");
 });
 
+// Header (Navigation Fixed)
+
+const navBarFixed = document.querySelector(".navbar-fixed");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 140) {
+    navBarFixed.classList.add("navbar-fixed--active");
+  } else {
+    navBarFixed.classList.remove("navbar-fixed--active");
+  }
+});
+
 // People also ask
 
 const askItemHeader = document.querySelectorAll(".accordion-item-header");
@@ -40,8 +52,12 @@ const itemBodyList = document.querySelector(".search-card-item");
 const imgContainer = document.querySelector(
   ".search-card-item-header-img-container"
 );
+const searchItemHeaderTitle = document.querySelector(
+  ".search-card-item-header-title"
+);
 
 searchItemHeader.addEventListener("click", () => {
+  searchItemHeaderTitle.classList.toggle("first-title--activated");
   expandIcon.classList.toggle("expand-icon--active");
   itemBody.classList.toggle("search-card-item-container--active");
   itemBodyList.classList.toggle("search-card-item--active");
@@ -49,3 +65,20 @@ searchItemHeader.addEventListener("click", () => {
     "search-card-item-header-img-container--active"
   );
 });
+
+// Pages
+
+const pagesIconListItem = document.querySelectorAll(".hover");
+const pagesListItem = document.querySelectorAll(".pages-list-item");
+
+for (let i = 0; i < pagesIconListItem.length; i++) {
+  pagesIconListItem[i].addEventListener("mouseover", () => {
+    pagesListItem[i].classList.toggle("pages-list-item-activated");
+  });
+}
+
+for (let i = 0; i < pagesIconListItem.length; i++) {
+  pagesIconListItem[i].addEventListener("mouseout", () => {
+    pagesListItem[i].classList.remove("pages-list-item-activated");
+  });
+}

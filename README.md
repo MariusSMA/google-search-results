@@ -35,10 +35,14 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
+- JavaScript
 
 ### What I learned
 
-- I learned how to make a horizontal navigation and how to hide the scrollbar for mobile devices in each major browser.
+- First I didn't realize how big this project is going to be, so I thought if I will use just CSS I'm going to be fine. After the first 500 lines of code I realize how important is a framework like SASS which can help you keep all of your styles clear and organized in more files and then compile them into one big CSS file. At least from now on I know how I am going to handle big projects
+- Mobile Navigation
+- Fixed navigation bar by using the window.ScrollY
+- How to make a horizontal navigation and how to hide the scrollbar for mobile devices in each major browser.
 
 ## Author
 

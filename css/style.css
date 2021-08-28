@@ -986,7 +986,7 @@ body {
 
 .country {
   text-align: center;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.55);
   padding-bottom: 0.5rem;
   border-bottom: 0.0625rem solid var(--border-lightgrey);
 }
@@ -1058,7 +1058,7 @@ body {
 .zip-code-home,
 .location {
   font-size: 0.875rem;
-  color: #1a73e8;
+  color: #186ad6;
 }
 
 .country:hover,
@@ -1814,7 +1814,7 @@ body {
   }
 
   .pages-list-item-link {
-    color: #4285f4;
+    color: #2b69d2;
   }
 
   .pages-list-item-link:hover {
@@ -1875,6 +1875,7 @@ body {
   }
 
   .footer-list-item {
+    color: #696e73;
     cursor: pointer;
   }
 

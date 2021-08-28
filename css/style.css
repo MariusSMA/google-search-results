@@ -1003,7 +1003,7 @@ body {
 .language-options-text-container {
   min-width: 5.43rem;
   font-size: 0.75rem;
-  color: rgba(0, 0, 0, 0.54);
+  color: rgba(0, 0, 0, 0.55);
   padding: 1rem;
   border-right: 0.0625rem solid var(--border-lightgrey);
 }
@@ -1087,7 +1087,7 @@ body {
 }
 
 .mail-section-switch {
-  color: var(--grey);
+  color: #696e73;
 }
 
 .footer-list {
@@ -1097,7 +1097,7 @@ body {
   flex-wrap: wrap;
   width: 65%;
   margin: 0 auto 2.5rem;
-  color: var(--grey);
+  color: #696e73;
   font-size: 0.875rem;
 }
 
@@ -1875,7 +1875,6 @@ body {
   }
 
   .footer-list-item {
-    color: #696e73;
     cursor: pointer;
   }
 
